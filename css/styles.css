@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+html {
+  font-size: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fefdf9;
+  min-height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3.2em 6em;
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.3em;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li {
+  margin-right: 2.6em;
+  padding-left: 1em;
+  list-style-type: disc;
+  list-style-position: outside;
+  font-size: 1.4rem;
+  line-height: 1.8em;
+}
+
+nav ul li:nth-of-type(1) {
+  list-style-type: none;
+}
+
+nav .sign-up {
+  border: none;
+  padding: 1.2rem 2.2rem;
+  background-color: #f7d1b0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8em;
+  border-radius: 18px 0px 0px 0px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  margin: 0 auto 8em;
+}
+
+.grid-container {
+  width: 46.6em;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "A B B B B B" "C C C C C D" "E F F F F F";
+  row-gap: 12px;
+  -webkit-column-gap: 12px;
+          column-gap: 12px;
+}
+
+.grid-container > div {
+  position: relative;
+}
+
+.one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: A;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  height: 30.5em;
+}
+
+.one .name {
+  background-color: #f7d1b0;
+  padding: 1.5rem 3rem;
+  font-size: 1.8rem;
+  line-height: 2.1em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.one > .image {
+  height: 100%;
+  background-image: url("assets/jane-jack.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.two {
+  position: relative;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-area: B;
+  background-color: #b0aee4;
+  height: 30.5em;
+  padding: 1em 2.8em;
+}
+
+.two .product-designer {
+  font-size: 2rem;
+  line-height: 2.6em;
+  font-weight: 500;
+}
+
+.two .status {
+  color: #6c6c94;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+}
+
+.two .grid-text-two svg {
+  position: absolute;
+  top: 17%;
+}
+
+.three {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: C;
+  background-color: #000000;
+  height: 14.7em;
+  z-index: -2;
+  color: #fefdf9;
+  padding: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1rem;
+}
+
+.three .fancy-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.three .fancy-text > .dark {
+  font-weight: 500;
+}
+
+.wavy-line {
+  position: absolute;
+  left: 41%;
+  right: 25%;
+}
+
+.four {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 6;
+  grid-column: 6;
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
+  grid-area: D;
+  background-color: #f7d1b0;
+  height: 14.7em;
+}
+
+.five {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: E;
+  background-color: #f7d1b0;
+  height: 13.7em;
+  border-radius: 0 0 0 60px;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4em 5.7em;
+}
+
+.five .spotify-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+}
+
+.six {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-area: F;
+  background-color: #b0aee4;
+  height: 13.7em;
+  z-index: -1;
+  padding: 2em;
+}
+
+.six .jobs {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.six .view-all {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.4em;
+}
+
+.six .view-all p {
+  margin-right: 0.9em;
+}
+
+.triangle {
+  width: 50px;
+  height: 50px !important;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: 0 0 0 12px #fefdf9;
+          box-shadow: 0 0 0 12px #fefdf9;
+}
+
+.triangle-2 {
+  bottom: -10px;
+  left: 30px;
+  z-index: -1;
+  background-color: #b0aee4;
+}
+
+.triangle-5 {
+  top: 42px;
+  right: -55px;
+  background-color: #b0aee4;
+  z-index: -2;
+}
+
+.triangle-6 {
+  top: -55px;
+  left: 220px;
+  background-color: #f7d1b0;
+  z-index: -1;
+}
+
+.copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-copy {
+  font-size: 6.4em;
+  letter-spacing: -0.03em;
+  font-weight: bold;
+}
+
+.tagline {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 1.4em;
+  line-height: 2em;
+  margin-top: 3.2em;
+}
+
+.cta-btns {
+  margin-top: 6.9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.watch-videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  background-color: #fefdf9;
+  margin-right: 4em;
+  font-size: 1.4em;
+  font-family: "DM Sans", sans-serif;
+}
+
+.play-btn {
+  margin-right: 1em;
+}
+
+.find-a-job {
+  border: none;
+  background-color: #000000;
+  color: #fefdf9;
+  font-size: 1.4rem;
+  font-family: "DM Sans", sans-serif;
+  padding: 1.5em 3.2em;
+  border-radius: 0px 0px 18px 0px;
+}
